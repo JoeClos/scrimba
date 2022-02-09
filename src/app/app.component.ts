@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-@Component({
+@Component({ 
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <router-outlet></router-outlet>
+
+  `
 })
-export class AppComponent {
-  title = 'scrimba';
+export class AppComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+   
+   
+  }
+  
 }
